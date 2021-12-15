@@ -1,0 +1,24 @@
+<!-- Ejemplo onload event -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+ <!-- script javascript     -->
+<script>
+
+function funcion_apellido() {
+  var nom = document.getElementById("name").value;
+  var apellido = document.getElementById("apellido").value;
+  alert ('Bienvenido ' + nom + " " + apellido  )
+}
+
+</script>
+</head>
+
+<body >
+<h1>Práctica bloque 3</h1>
+Introduce tu nombre:  <input type="text" id="name">
+Introduce tu apellido: <input type="text" id="apellido" onblur="funcion_apellido()">
+
+</body>
